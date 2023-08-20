@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Игра в свинью</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<main>
+    <section class="player player0 player--active">
+        <h2 class="name">Игрок 1</h2>
+        <p class="score" id="score0">0</p>
+        <div class="current">
+            <p class="current-label"> Текущие очки: </p>
+            <p class="current-score" id="current0">0</p>
+        </div>
+    </section>
+    <section class="player player1">
+        <h2 class="name">Игрок 2</h2>
+        <p class="score" id="score1">0</p>
+        <div class="current">
+            <p class="current-label"> Текущие очки: </p>
+            <p class="current-score" id="current1">0</p>
+        </div>
+    </section>
+    <img src="image/dice1.png" alt="playing dice" class="dice">
+    <button class="new-game btn">
+        &#128055; Новая игра
+    </button>
+    <button class="roll-dice btn">
+        &#127922; Бросить кубик
+    </button>
+    <button class="leave btn">
+        &#128076; Оставить
+    </button>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

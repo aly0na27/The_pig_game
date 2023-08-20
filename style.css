@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Play', sans-serif;
+    background-image: linear-gradient(to right top, #e2b810 0%, #ec3b05 100%);
+    color: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    position: relative;
+    height: 60vh;
+    width: 100vh;
+
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(300px);
+    filter: blur();
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 2);
+    display: flex;
+}
+
+.player {
+    flex: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.75s;
+    height: 60vh;
+    overflow: hidden;
+}
+.name {
+    position: relative;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.score {
+    color: #ee7d05;
+    font-size: 4rem;
+}
+.current {
+    background-color: #ee7d05;
+    border-radius: 10px;
+    padding: 2.3vh;
+    color: #fff;
+    text-align: center;
+    line-height: 4vh;
+}
+.current-score {
+    font-size: 30px;
+}
+.player--active {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/*button and dice*/
+.dice {
+    position: absolute;
+    height: 9vh;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.btn {
+    position: absolute;
+    height: 5vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-family: Play, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    color: #444;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn:active {
+    transform: translate(-50%, 3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.new-game {
+    width: 23vh;
+    top: 5%;
+}
+
+.roll-dice {
+    width: 25vh;
+    top: 70%;
+}
+
+.leave {
+    width: 20vh;
+    top: 81%;
+}
+.player--winner {
+    background-color: #2f2f2f;
+}
+
+.player--winner .name {
+    font-weight: 700;
+    color: #d50b0b;
+}
